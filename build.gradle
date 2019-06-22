@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+
+}
+group 'BodjoClientLib'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.2'
+    
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.3.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.3.0"
+    
+    //ws
+    implementation "javax.websocket:javax.websocket-api:1.1"
+    implementation 'com.neovisionaries:nv-websocket-client:2.8'
+}
+
